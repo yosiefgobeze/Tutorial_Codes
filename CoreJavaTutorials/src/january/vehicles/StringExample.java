@@ -52,5 +52,10 @@ public class StringExample {
 		String ohioCopy = ohio.replace(" ", ",");
 		System.out.println("Old ohio: " + ohio);
 		System.out.println("Ohio copy: " + ohioCopy);
+		
+		// String is immutable, and any change we did will not happen in the original one
+		ohio.toUpperCase();
+		// here even though we use the toUpperCase on our string, the original will not be affected, the change is stored in other location
+		System.out.println("ohio is not changed yet: " + ohio);
 	}
 }
